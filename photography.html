@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影作品</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <style type="text/css">
+        #gallery-wrapper {
+            position: relative;
+            max-width: 75%;
+            width: 75%;
+            margin: 50px auto;
+        }
+        
+        img.thumb {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .white-panel {
+            position: absolute;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+        }
+        
+        .white-panel h1 {
+            font-size: 1em;
+        }
+        
+        .white-panel h1 a {
+            color: #A92733;
+        }
+        
+        .white-panel:hover {
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            margin-top: -5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/pinterest_grid.js"></script>
+</head>
+
+<body>
+    <section id="gallery-wrapper">
+        <article class="white-panel">
+            <img src="images/qiu.jpg" class="thumb">
+            <h1><a href="#">Autumn</a></h1>
+            <p>autumn</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/cable car.jpg" class="thumb">
+            <h1><a href="#">Cable car</a></h1>
+            <p>China·Hebei Zhangjiakou</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/qingdao.jpg" class="thumb">
+            <h1><a href="#">Landingstage</a></h1>
+            <p>China·Qingdao</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/sea.jpg" class="thumb">
+            <h1><a href="#">Sea</a></h1>
+            <p>China·Qingdao</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/traffic light.jpg" class="thumb">
+            <h1><a href="#">Traffic light</a></h1>
+            <p>night</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/moment.jpg" class="thumb">
+            <h1><a href="#">Moment</a></h1>
+            <p> the car model enters the water </p>
+        </article>
+        <article class="white-panel">
+            <img src="images/guangzhou.jpg" class="thumb">
+            <h1><a href="#">Colorful city</a></h1>
+            <p>China·Guangzhou</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/xiong.jpg" class="thumb">
+            <h1><a href="#">Bear</a></h1>
+            <p>Cool bear</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/moon.jpg" class="thumb">
+            <h1><a href="#">Moon</a></h1>
+            <p>Moon</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/footprint.jpg" class="thumb">
+            <h1><a href="#">Footprint</a></h1>
+            <p>My love</p>
+        </article>
+
+        <article class="white-panel">
+            <img src="images/long exposure.jpg" class="thumb">
+            <h1><a href="#">Long exposure</a></h1>
+            <p>China·Beijing</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/light.jpg" class="thumb">
+            <h1><a href="#">Light</a></h1>
+            <p>Light</p>
+        </article>
+        <article class="white-panel">
+            <img src="images/train.jpg" class="thumb">
+            <h1><a href="#">Subway</a></h1>
+            <p>China·chongqing Liziba</p>
+        </article>
+
+    </section>
+    <script>
+        $("#gallery-wrapper").pinterest_grid();
+    </script>
+</body>
+
+</html>
